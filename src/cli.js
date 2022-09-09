@@ -1,6 +1,8 @@
+import React from 'react'
 import { render } from 'mjml-react';
 
-import { generate } from './email';
+import { TemplateCultura } from './templates/TemplateCultura';
 
-const { html } = render(generate(), { validationLevel: 'soft' });
+const { html } = render(<TemplateCultura />);
+
 console.log(html);
